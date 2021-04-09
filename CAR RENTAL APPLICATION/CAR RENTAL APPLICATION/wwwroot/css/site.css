@@ -78,3 +78,60 @@ body {
     line-height: 60px; /* Vertically center the text there */
 }
 
+.container-img {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+}
+
+    .container-img .section {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        scroll-snap-align: start;
+        background-blend-mode: multiply;
+    }
+
+        .container-img .section:nth-child(1) {
+            background: #8c8a89 url(../Assets/middle.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .container-img .section:nth-child(2) {
+            background: #8c8a89 url(../Assets/under.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .container-img .section:nth-child(3) {
+            background: #8c8a89 url(../Assets/upper.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .container-img .section .content {
+            position: absolute;
+            bottom: 30vh;
+            left: 50vh;
+            max-width: 700px;
+        }
+
+            .container-img .section .content h2 {
+                color: whitesmoke;
+                font-weight: 400;
+                display: inline-block;
+                padding: 10px;
+                font-size: 4em;
+            }
+
+            .container-img .section .content p {
+                color: whitesmoke;
+                font-weight: 500;
+                display: inline-block;
+                padding: 10px;
+                margin-top: 10px;
+            }
+
