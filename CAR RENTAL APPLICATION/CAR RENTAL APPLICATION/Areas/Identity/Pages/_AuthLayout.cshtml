@@ -2,20 +2,26 @@
     Layout = "/Views/Shared/_Layout.cshtml";
 }
 
-<div class="row">
-    <div class="col-md-6 offset-md-3">
+    <div class="  bg-secondary">
         <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="row">
                     <div class="col-md-12">
+                        <hr />
                         @RenderBody()
                     </div>
-    </div>
-</div>
+                </div>
+            </div>
+        </div>
+        </div>
+        
 
-@section Scripts{
-    @RenderSection("Scripts", required: false)
 
-} 
+        @section Scripts{
+            @RenderSection("Scripts", required: false)
 
-<script>
+        }
 
-</script>
+        <script>
+
+        </script>
