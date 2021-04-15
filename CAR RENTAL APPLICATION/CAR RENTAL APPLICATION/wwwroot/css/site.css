@@ -135,4 +135,14 @@ body {
                 padding: 10px;
                 margin-top: 10px;
             }
+.contact-us {
+    background-color: whitesmoke;
+    box-shadow: 6px 6px 2px 1px rgba(33, 33, 33, 0.20);
+}
+
+.contact-us-pic {
+    background: url(../Assets/contact.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
 
