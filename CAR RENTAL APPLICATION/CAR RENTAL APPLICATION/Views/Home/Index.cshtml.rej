@@ -1,0 +1,32 @@
+diff a/CAR RENTAL APPLICATION/CAR RENTAL APPLICATION/Views/Home/Index.cshtml b/CAR RENTAL APPLICATION/CAR RENTAL APPLICATION/Views/Home/Index.cshtml	(rejected hunks)
+@@ -2,3 +2,30 @@
+     ViewData["Title"] = "Home Page";
+ }
+ 
++<div class="container-img">
++    <div class="section">
++        <div class="content">
++            <h2>Presentation</h2>
++            <p>Stop wasting time and reserver your car now</p>
++            <div>
++                <a asp-area="" asp-controller="Home" asp-action="presentation" class="btn btn-light btn-book float-left">Book now</a>
++            </div>
++        </div>
++    </div>
++    <div class="section">
++        <div class="content">
++            <h2>Details</h2>
++            <p>Stop wasting time and reserver your car now</p>
++            <div>
++                <a asp-area="" asp-controller="Home" asp-action="presentation" class="btn btn-light btn-book float-left">Book now</a>
++            </div>
++        </div>
++    </div>
++    <div class="section">
++        <div class="content">
++            <h2>next</h2>
++            <p>Stop wasting time and reserver your car now</p>
++            <a asp-area="" asp-controller="Home" asp-action="presentation" class="btn btn-light btn-book">Book now</a>
++        </div>
++    </div>
++</div>
