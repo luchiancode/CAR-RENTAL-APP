@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using CAR_RENTAL_APPLICATION.Models;
 
 namespace CAR_RENTAL_APPLICATION.Repositories
 {
-    public class ICarRecordRepository
+    public interface ICarRecordRepository : IRepositoryBase<CarRecord>
     {
     }
 }
