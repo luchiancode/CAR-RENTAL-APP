@@ -15,7 +15,14 @@ namespace CAR_RENTAL_APPLICATION.Repositories
         private IcontactRepository _IcontactRepository;
         private ImailingListRepository _ImailingListRepository;
         private IUserRepository _IUserRepository;
+        private ICarRepository _ICarRepository;
+        private ICarRecordRepository _ICarRecordRepository;
 
+        private IPaymentRepository _IPaymentRepository;
+
+        private IPaymentMethodRepository _IPaymentMethodRepository;
+
+        private ITransactionRepository _ITransactionRepository;
 
         public InewsletterRepository newsletterRepository
         {
@@ -67,7 +74,69 @@ namespace CAR_RENTAL_APPLICATION.Repositories
             }
         }
 
+        public ICarRepository CarRepository
+        {
+            get
+            {
+                if (_ICarRepository == null)
+                {
+                    _ICarRepository = new CarRepository(_CarsContext);
+                }
+                return _ICarRepository;
+            }
+        }
+
+        public ICarRecordRepository CarRecordRepository
+        {
+            get
+            {
+                if (_ICarRecordRepository == null)
+                {
+                    _ICarRecordRepository = new CarRecordRepository(_CarsContext);
+                }
+                return _ICarRecordRepository;
+            }
+        }
+
         
+        public IPaymentRepository PaymentRepository
+        {
+            get
+            {
+                if (_IPaymentRepository == null)
+                {
+                    _IPaymentRepository = new PaymentRepository(_CarsContext);
+                }
+                return _IPaymentRepository;
+            }
+        }
+
+
+        public IPaymentMethodRepository PaymentMethodRepository
+        {
+            get
+            {
+                if (_IPaymentMethodRepository == null)
+                {
+                    _IPaymentMethodRepository = new PaymentMethodRepository(_CarsContext);
+                }
+                return _IPaymentMethodRepository;
+            }
+        }
+
+        public ITransactionRepository TransactionRepository
+        {
+            get
+            {
+                if (_ITransactionRepository == null)
+                {
+                    _ITransactionRepository = new TransactionRepository(_CarsContext);
+                }
+                return _ITransactionRepository;
+            }
+        }
+
+
 
         public RepositoryWrapper(CarsContext CarsContext)
         {

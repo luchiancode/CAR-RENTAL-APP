@@ -1,6 +1,6 @@
-﻿using mdb.Models;
+﻿using CAR_RENTAL_APPLICATION.Models;
 
-namespace mdb.Repositories
+namespace CAR_RENTAL_APPLICATION.Repositories
 {
     public interface InewsletterRepository : IRepositoryBase<newsletter>
     {

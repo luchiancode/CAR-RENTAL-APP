@@ -2,15 +2,15 @@
 using System;
 using System.Linq;
 using System.Linq.Expressions;
-using mdb.Models;
+using CAR_RENTAL_APPLICATION.Models;
 
-namespace mdb.Repositories
+namespace CAR_RENTAL_APPLICATION.Repositories
 {
     public abstract class RepositoryBase<T> : IRepositoryBase<T> where T : class
     {
-        protected mdbContext mdbContext { get; set; }
+        protected CarsContext mdbContext { get; set; }
 
-        public RepositoryBase(mdbContext mdbContext)
+        public RepositoryBase(CarsContext mdbContext)
         {
             this.mdbContext = mdbContext;
         }

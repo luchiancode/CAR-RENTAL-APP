@@ -1,14 +1,14 @@
-﻿using mdb.Models;
+﻿using CAR_RENTAL_APPLICATION.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace mdb.Repositories
+namespace CAR_RENTAL_APPLICATION.Repositories
 {
     public class mailingListRepository : RepositoryBase<mailingList>, ImailingListRepository
     {
-        public mailingListRepository(mdbContext mailingListContext)
+        public mailingListRepository(CarsContext mailingListContext)
             : base(mailingListContext)
         {
         }

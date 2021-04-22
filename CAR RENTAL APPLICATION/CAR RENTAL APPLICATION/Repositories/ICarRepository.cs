@@ -2,7 +2,7 @@
 
 namespace CAR_RENTAL_APPLICATION.Repositories
 {
-    public interface ImailingListRepository : IRepositoryBase<mailingList>
+    public interface ICarRepository : IRepositoryBase<Car>
     {
     }
 }

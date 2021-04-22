@@ -1,14 +1,14 @@
-﻿using mdb.Models;
+﻿using CAR_RENTAL_APPLICATION.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace mdb.Repositories
+namespace CAR_RENTAL_APPLICATION.Repositories
 {
     public class newsletterRepository : RepositoryBase<newsletter>, InewsletterRepository
     {
-        public newsletterRepository(mdbContext newsletterContext)
+        public newsletterRepository(CarsContext newsletterContext)
             : base(newsletterContext)
         {
         }

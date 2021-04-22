@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace CAR_RENTAL_APPLICATION.Repositories
 {
-    public class UserRepository : RepositoryBase<User>, IUserRepository
+    public class PaymentRepository : RepositoryBase<Payment>, IPaymentRepository
     {
-        public UserRepository(CarsContext UserContext)
-            : base(UserContext)
+        public PaymentRepository(CarsContext PaymentContext)
+            : base(PaymentContext)
         {
         }
+
     }
 }

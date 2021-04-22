@@ -11,8 +11,16 @@
         IUserRepository UserRepository { get; }
         ImailingListRepository mailingListRepository { get; }
 
-     
+        ICarRepository CarRepository { get; }
+        
 
+        ICarRecordRepository CarRecordRepository { get; }
+
+        IPaymentRepository PaymentRepository { get; }
+
+        IPaymentMethodRepository PaymentMethodRepository { get; }
+
+        ITransactionRepository TransactionRepository { get; }
 
         void Save();
     }
