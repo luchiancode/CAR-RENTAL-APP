@@ -1,0 +1,83 @@
+﻿@model IEnumerable<CAR_RENTAL_APPLICATION.Models.mailingList>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.address)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.address2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.city)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.state)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.zip)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.policy)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.newsletter)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.address)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.address2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.city)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.state)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.zip)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.policy)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.newsletter.newsletterId)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.mailingListId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.mailingListId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.mailingListId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
