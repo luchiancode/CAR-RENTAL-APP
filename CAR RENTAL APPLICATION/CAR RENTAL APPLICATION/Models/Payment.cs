@@ -9,7 +9,7 @@ namespace CAR_RENTAL_APPLICATION.Models
     {
         public int PaymentId { get; set; }
         public int PaymentMethodId { get; set; }
-        public decimal Amount { get; set; }
+        public int Amount { get; set; }
         public DateTime TimeStamp { get; set; }
 
         public PaymentMethod PaymentMethod { get; set; }

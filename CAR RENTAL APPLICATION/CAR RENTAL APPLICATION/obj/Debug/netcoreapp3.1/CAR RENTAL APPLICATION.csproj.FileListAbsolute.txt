@@ -511,3 +511,4 @@ C:\Users\Luchian\Documents\CAR RENTAL APPLICATION\CAR RENTAL APPLICATION\obj\Deb
 C:\Users\Luchian\Documents\CAR RENTAL APPLICATION\CAR RENTAL APPLICATION\obj\Debug\netcoreapp3.1\CAR RENTAL APPLICATION.dll
 C:\Users\Luchian\Documents\CAR RENTAL APPLICATION\CAR RENTAL APPLICATION\obj\Debug\netcoreapp3.1\CAR RENTAL APPLICATION.pdb
 C:\Users\Luchian\Documents\CAR RENTAL APPLICATION\CAR RENTAL APPLICATION\obj\Debug\netcoreapp3.1\CAR RENTAL APPLICATION.genruntimeconfig.cache
+C:\Users\Luchian\Desktop\Git\CAR RENTAL APPLICATION\CAR RENTAL APPLICATION\obj\Debug\netcoreapp3.1\Razor\Views\Home\contact.cshtml.g.cs
