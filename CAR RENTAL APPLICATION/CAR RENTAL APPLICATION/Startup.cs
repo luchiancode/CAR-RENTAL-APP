@@ -1,4 +1,6 @@
 using CAR_RENTAL_APPLICATION.Models;
+using CAR_RENTAL_APPLICATION.Repositories;
+using CAR_RENTAL_APPLICATION.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -29,6 +31,20 @@ namespace CAR_RENTAL_APPLICATION
             var connection = @"Server=(localdb)\mssqllocaldb;Database=TestEntityFrameworkCAR_RENTAL_APPLICATION;Trusted_Connection=True;ConnectRetryCount=0";
             services.AddDbContext<CarsContext>
                 (options => options.UseSqlServer(connection));
+
+            services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
+            services.AddScoped<CarRecordService>();
+            services.AddScoped<CarService>();
+            services.AddScoped<contactService>();
+            services.AddScoped<mailingList>();
+            services.AddScoped<newsletter>();
+            services.AddScoped<PaymentMethodService>();
+            services.AddScoped<PaymentService>();
+            services.AddScoped<TransactionService>();
+            services.AddScoped<UserService>();
+
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
