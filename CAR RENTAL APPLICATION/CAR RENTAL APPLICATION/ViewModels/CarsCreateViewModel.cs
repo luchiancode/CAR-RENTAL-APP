@@ -5,11 +5,10 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace CAR_RENTAL_APPLICATION.Models
+namespace CAR_RENTAL_APPLICATION.ViewModels
 {
-    public class Car
+    public class CarsCreateViewModel
     {
-        public int CarId { get; set; }
         public string Brand { get; set; }
         public string Colour { get; set; }
         public string Capacity { get; set; }
@@ -17,6 +16,6 @@ namespace CAR_RENTAL_APPLICATION.Models
         public string FabricationYear { get; set; }
         [Display(Name = "Choose a photo for the car")]
         [Required]
-        public string CarImagePath { get; set; }
+        public IFormFile CarImage { get; set; }
     }
 }

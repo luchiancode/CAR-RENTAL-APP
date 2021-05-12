@@ -7,24 +7,27 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
-<body>
+<body class="formViewClass">
     <header>
-        <nav class="navbar fixed-top navbar-expand-sm navbar-dark navbar-toggleable-sm">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">CAR_RENTAL_APPLICATION</a>
-               
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    <partial name="_LoginPartial.cshtml" />
+        <nav class="navbar fixed-top navbar-expand-sm navbar-toggleable-sm navbar-dark border-bottom box-shadow mb-3" style="background-color:whitesmoke">
+            <div class="container"
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img src="~/Assets/logo1.png" style="width:100px;" /></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse d-sm-inline-flex flex-sm-row-reverse text-dark">
+                    <partial name="_LoginPartialBlack.cshtml" />
                     <ul class="navbar-nav ml-auto">
                         <li>
-                            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="presentation">Presentation</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Cars" asp-action="index">Cars</a>
 
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="details">Details</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="details">Details</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="contact">Contact US</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="contact">Contact US</a>
                         </li>
 
                     </ul>
@@ -33,9 +36,28 @@
         </nav>
     </header>
     
-        <main role="main">
-            @RenderBody()
-        </main>
+    <main role="main">
+        <div class="row" style="height:8em;">
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-1">
+
+            </div>
+            <div class="col-md-10">
+                @RenderBody()
+            </div>
+            <div class="col-md-1">
+
+            </div>
+
+            <div class="row">
+
+            </div>
+
+
+    </main>
    
 
     <footer class="border-top footer text-muted">

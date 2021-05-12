@@ -8,7 +8,7 @@ namespace CAR_RENTAL_APPLICATION.Models
     public class Transaction
     {
         public int TransactionId { get; set; }
-        public int UserId { get; set; }
+        public string UserId { get; set; }
         public int CarId { get; set; }
         public int OwnerId { get; set; }
         public int PaymentId { get; set; }

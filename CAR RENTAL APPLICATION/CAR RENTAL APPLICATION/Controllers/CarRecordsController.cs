@@ -49,7 +49,6 @@ namespace CAR_RENTAL_APPLICATION.Controllers
         public IActionResult Create()
         {
             ViewData["CarId"] = new SelectList(_context.Cars, "CarId", "CarId");
-            ViewData["UserId"] = new SelectList(_context.Set<User>(), "UserId", "UserId");
             return View();
         }
 

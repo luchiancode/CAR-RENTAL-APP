@@ -19,9 +19,6 @@
                 @Html.DisplayNameFor(model => model.TimeStamp)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.User)
-            </th>
-            <th>
                 @Html.DisplayNameFor(model => model.Car)
             </th>
             <th>
@@ -40,9 +37,6 @@
                 @Html.DisplayFor(modelItem => item.TimeStamp)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.User.UserId)
-            </td>
-            <td>
                 @Html.DisplayFor(modelItem => item.Car.CarId)
             </td>
             <td>
@@ -53,6 +47,7 @@
                 <a asp-action="Details" asp-route-id="@item.TransactionId">Details</a> |
                 <a asp-action="Delete" asp-route-id="@item.TransactionId">Delete</a>
             </td>
+          
         </tr>
 }
     </tbody>

@@ -24,7 +24,10 @@ namespace CAR_RENTAL_APPLICATION.Repositories
         {
             return this.mdbContext.Set<T>().Where(expression).AsNoTracking();
         }
-
+        public void Add(T entity)
+        {
+            this.mdbContext.Set<T>().Add(entity);
+        }
         public void Create(T entity)
         {
             this.mdbContext.Set<T>().Add(entity);

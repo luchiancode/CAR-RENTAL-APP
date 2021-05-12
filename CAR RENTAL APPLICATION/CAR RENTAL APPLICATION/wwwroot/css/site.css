@@ -4,7 +4,7 @@ for details on configuring this project to bundle and minify static web assets. 
 * {
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    font-family: 'Times New Roman', Times, serif;
 }
 a.navbar-brand {
     white-space: normal;
@@ -145,4 +145,10 @@ body {
     background-size: cover;
     background-attachment: fixed;
 }
-
+.car-bg {
+    background-size: cover;
+    background-attachment: fixed;
+}
+.formViewclass {
+    background-color: whitesmoke;
+}

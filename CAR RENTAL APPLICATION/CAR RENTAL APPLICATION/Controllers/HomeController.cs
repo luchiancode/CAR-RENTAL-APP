@@ -29,12 +29,6 @@ namespace CAR_RENTAL_APPLICATION.Controllers
         {
             return View();
         }
-
-        public IActionResult presentation()
-        {
-            return View();
-        }
-
         public IActionResult details()
         {
             return View();

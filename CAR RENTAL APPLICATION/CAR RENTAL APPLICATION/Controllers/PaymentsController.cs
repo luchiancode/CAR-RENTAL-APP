@@ -62,7 +62,7 @@ namespace CAR_RENTAL_APPLICATION.Controllers
             {
                 _context.Add(payment);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return Redirect("/Transactions/Create");
             }
             ViewData["PaymentMethodId"] = new SelectList(_context.PaymentMethods, "PaymentMethodId", "PaymentMethodId", payment.PaymentMethodId);
             return View(payment);

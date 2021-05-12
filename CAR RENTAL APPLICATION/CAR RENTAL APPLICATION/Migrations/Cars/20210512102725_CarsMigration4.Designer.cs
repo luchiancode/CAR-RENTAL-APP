@@ -4,14 +4,16 @@ using CAR_RENTAL_APPLICATION.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace CAR_RENTAL_APPLICATION.Migrations.Cars
 {
     [DbContext(typeof(CarsContext))]
-    partial class CarsContextModelSnapshot : ModelSnapshot
+    [Migration("20210512102725_CarsMigration4")]
+    partial class CarsMigration4
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -132,10 +134,7 @@ namespace CAR_RENTAL_APPLICATION.Migrations.Cars
                     b.Property<DateTime>("TimeStamp")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("UserId")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int?>("UserId1")
+                    b.Property<int>("UserId")
                         .HasColumnType("int");
 
                     b.HasKey("TransactionId");
@@ -144,7 +143,7 @@ namespace CAR_RENTAL_APPLICATION.Migrations.Cars
 
                     b.HasIndex("PaymentId");
 
-                    b.HasIndex("UserId1");
+                    b.HasIndex("UserId");
 
                     b.ToTable("Transactions");
                 });
@@ -308,7 +307,9 @@ namespace CAR_RENTAL_APPLICATION.Migrations.Cars
 
                     b.HasOne("CAR_RENTAL_APPLICATION.Models.User", "User")
                         .WithMany()
-                        .HasForeignKey("UserId1");
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("CAR_RENTAL_APPLICATION.Models.contact", b =>

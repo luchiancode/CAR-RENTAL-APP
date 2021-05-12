@@ -6,22 +6,28 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using CAR_RENTAL_APPLICATION.Models;
+using Microsoft.AspNetCore.Identity;
+using CAR_RENTAL_APPLICATION.Areas.Identity.Data;
 
 namespace CAR_RENTAL_APPLICATION.Controllers
 {
     public class TransactionsController : Controller
     {
         private readonly CarsContext _context;
+        private readonly UserManager<APPLICATIONUser> _userManager;
 
-        public TransactionsController(CarsContext context)
+        public TransactionsController(CarsContext context, UserManager<APPLICATIONUser> userManager)
         {
+            _userManager = userManager;
             _context = context;
         }
 
         // GET: Transactions
         public async Task<IActionResult> Index()
         {
+            
             var carsContext = _context.Transactions.Include(t => t.Car).Include(t => t.Payment).Include(t => t.User);
+           
             return View(await carsContext.ToListAsync());
         }
 
@@ -51,7 +57,7 @@ namespace CAR_RENTAL_APPLICATION.Controllers
         {
             ViewData["CarId"] = new SelectList(_context.Cars, "CarId", "CarId");
             ViewData["PaymentId"] = new SelectList(_context.Payments, "PaymentId", "PaymentId");
-            ViewData["UserId"] = new SelectList(_context.Set<User>(), "UserId", "UserId");
+            
             return View();
         }
 
@@ -62,6 +68,9 @@ namespace CAR_RENTAL_APPLICATION.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("TransactionId,UserId,CarId,OwnerId,PaymentId,TimeStamp")] Transaction transaction)
         {
+
+            transaction.UserId = _userManager.GetUserId(HttpContext.User);
+
             if (ModelState.IsValid)
             {
                 _context.Add(transaction);
@@ -70,7 +79,7 @@ namespace CAR_RENTAL_APPLICATION.Controllers
             }
             ViewData["CarId"] = new SelectList(_context.Cars, "CarId", "CarId", transaction.CarId);
             ViewData["PaymentId"] = new SelectList(_context.Payments, "PaymentId", "PaymentId", transaction.PaymentId);
-            ViewData["UserId"] = new SelectList(_context.Set<User>(), "UserId", "UserId", transaction.UserId);
+           
             return View(transaction);
         }
 
@@ -127,7 +136,6 @@ namespace CAR_RENTAL_APPLICATION.Controllers
             }
             ViewData["CarId"] = new SelectList(_context.Cars, "CarId", "CarId", transaction.CarId);
             ViewData["PaymentId"] = new SelectList(_context.Payments, "PaymentId", "PaymentId", transaction.PaymentId);
-            ViewData["UserId"] = new SelectList(_context.Set<User>(), "UserId", "UserId", transaction.UserId);
             return View(transaction);
         }
 

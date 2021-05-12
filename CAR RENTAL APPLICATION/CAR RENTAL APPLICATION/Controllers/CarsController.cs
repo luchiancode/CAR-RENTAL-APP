@@ -6,16 +6,22 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using CAR_RENTAL_APPLICATION.Models;
+using Microsoft.AspNetCore.Hosting;
+using System.IO;
+using CAR_RENTAL_APPLICATION.Repositories;
+using CAR_RENTAL_APPLICATION.ViewModels;
 
 namespace CAR_RENTAL_APPLICATION.Controllers
 {
     public class CarsController : Controller
     {
         private readonly CarsContext _context;
+        private readonly IHostingEnvironment hostingEnvironment;
 
-        public CarsController(CarsContext context)
+        public CarsController(CarsContext context, IHostingEnvironment hostingEnvironment)
         {
             _context = context;
+            this.hostingEnvironment = hostingEnvironment;
         }
 
         // GET: Cars
@@ -53,11 +59,34 @@ namespace CAR_RENTAL_APPLICATION.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("CarId,Brand,Colour,Capacity,NumberOfDoors,FabricationYear")] Car car)
+        public async Task<IActionResult> Create(CarsCreateViewModel car)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(car);
+                string uniqueFileName = null;
+                if (car.CarImage != null)
+                {
+                    string uploadsFolder = Path.Combine(hostingEnvironment.WebRootPath + "/images");
+                    uniqueFileName = Guid.NewGuid().ToString() + "_" + car.CarImage.FileName;
+                    string filePath = Path.Combine(uploadsFolder, uniqueFileName);
+                    car.CarImage.CopyTo(new FileStream(filePath, FileMode.Create));
+                  //  string folder = "cars/images";
+                  //  folder +=  Guid.NewGuid().ToString() + "_" + car.CarImage.FileName ;
+                  //  string serverFolder = Path.Combine(_webHostEnviroment.WebRootPath, folder);
+
+                    //await  car.CarImage.CopyToAsync(new FileStream(serverFolder, FileMode.Create));
+                }
+                Car newCar = new Car
+                {
+                    Brand = car.Brand,
+                    Colour = car.Colour,
+                    Capacity = car.Capacity,
+                    NumberOfDoors = car.Capacity,
+                    FabricationYear = car.FabricationYear,
+                    CarImagePath = uniqueFileName
+
+                };
+                _context.Add(newCar);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
