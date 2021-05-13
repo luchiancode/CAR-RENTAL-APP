@@ -302,7 +302,6 @@ C:\Users\Luchian\Desktop\Git\CAR RENTAL APPLICATION\CAR RENTAL APPLICATION\bin\D
 C:\Users\Luchian\Desktop\Git\CAR RENTAL APPLICATION\CAR RENTAL APPLICATION\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\Luchian\Desktop\Git\CAR RENTAL APPLICATION\CAR RENTAL APPLICATION\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\Luchian\Desktop\Git\CAR RENTAL APPLICATION\CAR RENTAL APPLICATION\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\Luchian\Desktop\Git\CAR RENTAL APPLICATION\CAR RENTAL APPLICATION\obj\Debug\netcoreapp3.1\CAR RENTAL APPLICATION.csprojAssemblyReference.cache
 C:\Users\Luchian\Desktop\Git\CAR RENTAL APPLICATION\CAR RENTAL APPLICATION\obj\Debug\netcoreapp3.1\CAR RENTAL APPLICATION.AssemblyInfoInputs.cache
 C:\Users\Luchian\Desktop\Git\CAR RENTAL APPLICATION\CAR RENTAL APPLICATION\obj\Debug\netcoreapp3.1\CAR RENTAL APPLICATION.AssemblyInfo.cs
 C:\Users\Luchian\Desktop\Git\CAR RENTAL APPLICATION\CAR RENTAL APPLICATION\obj\Debug\netcoreapp3.1\CAR RENTAL APPLICATION.csproj.CoreCompileInputs.cache
@@ -323,9 +322,7 @@ C:\Users\Luchian\Desktop\Git\CAR RENTAL APPLICATION\CAR RENTAL APPLICATION\obj\D
 C:\Users\Luchian\Desktop\Git\CAR RENTAL APPLICATION\CAR RENTAL APPLICATION\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\Luchian\Desktop\Git\CAR RENTAL APPLICATION\CAR RENTAL APPLICATION\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
 C:\Users\Luchian\Desktop\Git\CAR RENTAL APPLICATION\CAR RENTAL APPLICATION\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
-C:\Users\Luchian\Desktop\Git\CAR RENTAL APPLICATION\CAR RENTAL APPLICATION\obj\Debug\netcoreapp3.1\Razor\Views\Home\details.cshtml.g.cs
 C:\Users\Luchian\Desktop\Git\CAR RENTAL APPLICATION\CAR RENTAL APPLICATION\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
-C:\Users\Luchian\Desktop\Git\CAR RENTAL APPLICATION\CAR RENTAL APPLICATION\obj\Debug\netcoreapp3.1\Razor\Views\Home\presentation.cshtml.g.cs
 C:\Users\Luchian\Desktop\Git\CAR RENTAL APPLICATION\CAR RENTAL APPLICATION\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\Luchian\Desktop\Git\CAR RENTAL APPLICATION\CAR RENTAL APPLICATION\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\Luchian\Desktop\Git\CAR RENTAL APPLICATION\CAR RENTAL APPLICATION\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
@@ -512,11 +509,6 @@ C:\Users\Luchian\Documents\CAR RENTAL APPLICATION\CAR RENTAL APPLICATION\obj\Deb
 C:\Users\Luchian\Documents\CAR RENTAL APPLICATION\CAR RENTAL APPLICATION\obj\Debug\netcoreapp3.1\CAR RENTAL APPLICATION.pdb
 C:\Users\Luchian\Documents\CAR RENTAL APPLICATION\CAR RENTAL APPLICATION\obj\Debug\netcoreapp3.1\CAR RENTAL APPLICATION.genruntimeconfig.cache
 C:\Users\Luchian\Desktop\Git\CAR RENTAL APPLICATION\CAR RENTAL APPLICATION\obj\Debug\netcoreapp3.1\Razor\Views\Home\contact.cshtml.g.cs
-C:\Users\Luchian\Desktop\Git\CAR RENTAL APPLICATION\CAR RENTAL APPLICATION\obj\Debug\netcoreapp3.1\Razor\Views\Cars\Create.cshtml.g.cs
-C:\Users\Luchian\Desktop\Git\CAR RENTAL APPLICATION\CAR RENTAL APPLICATION\obj\Debug\netcoreapp3.1\Razor\Views\Cars\Delete.cshtml.g.cs
-C:\Users\Luchian\Desktop\Git\CAR RENTAL APPLICATION\CAR RENTAL APPLICATION\obj\Debug\netcoreapp3.1\Razor\Views\Cars\Details.cshtml.g.cs
-C:\Users\Luchian\Desktop\Git\CAR RENTAL APPLICATION\CAR RENTAL APPLICATION\obj\Debug\netcoreapp3.1\Razor\Views\Cars\Edit.cshtml.g.cs
-C:\Users\Luchian\Desktop\Git\CAR RENTAL APPLICATION\CAR RENTAL APPLICATION\obj\Debug\netcoreapp3.1\Razor\Views\Cars\Index.cshtml.g.cs
 C:\Users\Luchian\Desktop\Git\CAR RENTAL APPLICATION\CAR RENTAL APPLICATION\obj\Debug\netcoreapp3.1\Razor\Views\CarRecords\Create.cshtml.g.cs
 C:\Users\Luchian\Desktop\Git\CAR RENTAL APPLICATION\CAR RENTAL APPLICATION\obj\Debug\netcoreapp3.1\Razor\Views\CarRecords\Delete.cshtml.g.cs
 C:\Users\Luchian\Desktop\Git\CAR RENTAL APPLICATION\CAR RENTAL APPLICATION\obj\Debug\netcoreapp3.1\Razor\Views\CarRecords\Details.cshtml.g.cs
@@ -552,3 +544,17 @@ C:\Users\Luchian\Desktop\Git\CAR RENTAL APPLICATION\CAR RENTAL APPLICATION\obj\D
 C:\Users\Luchian\Desktop\Git\CAR RENTAL APPLICATION\CAR RENTAL APPLICATION\obj\Debug\netcoreapp3.1\Razor\Views\Transactions\Details.cshtml.g.cs
 C:\Users\Luchian\Desktop\Git\CAR RENTAL APPLICATION\CAR RENTAL APPLICATION\obj\Debug\netcoreapp3.1\Razor\Views\Transactions\Edit.cshtml.g.cs
 C:\Users\Luchian\Desktop\Git\CAR RENTAL APPLICATION\CAR RENTAL APPLICATION\obj\Debug\netcoreapp3.1\Razor\Views\Transactions\Index.cshtml.g.cs
+C:\Users\Luchian\Desktop\Git\CAR RENTAL APPLICATION\CAR RENTAL APPLICATION\obj\Debug\netcoreapp3.1\Razor\Views\Cars\Create.cshtml.g.cs
+C:\Users\Luchian\Desktop\Git\CAR RENTAL APPLICATION\CAR RENTAL APPLICATION\obj\Debug\netcoreapp3.1\Razor\Views\Cars\Delete.cshtml.g.cs
+C:\Users\Luchian\Desktop\Git\CAR RENTAL APPLICATION\CAR RENTAL APPLICATION\obj\Debug\netcoreapp3.1\Razor\Views\Cars\Details.cshtml.g.cs
+C:\Users\Luchian\Desktop\Git\CAR RENTAL APPLICATION\CAR RENTAL APPLICATION\obj\Debug\netcoreapp3.1\Razor\Views\Cars\Edit.cshtml.g.cs
+C:\Users\Luchian\Desktop\Git\CAR RENTAL APPLICATION\CAR RENTAL APPLICATION\obj\Debug\netcoreapp3.1\Razor\Views\Cars\Index.cshtml.g.cs
+C:\Users\Luchian\Desktop\Git\CAR RENTAL APPLICATION\CAR RENTAL APPLICATION\obj\Debug\netcoreapp3.1\Razor\Views\Shared\home.cshtml.g.cs
+C:\Users\Luchian\Desktop\Git\CAR RENTAL APPLICATION\CAR RENTAL APPLICATION\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LoginPartialBlack.cshtml.g.cs
+C:\Users\Luchian\Desktop\Git\CAR RENTAL APPLICATION\CAR RENTAL APPLICATION\obj\Debug\netcoreapp3.1\CAR RENTAL APPLICATION.csprojAssemblyReference.cache
+C:\Users\Luchian\Desktop\Git\CAR RENTAL APPLICATION\CAR RENTAL APPLICATION\obj\Debug\netcoreapp3.1\Razor\Views\Users\Create.cshtml.g.cs
+C:\Users\Luchian\Desktop\Git\CAR RENTAL APPLICATION\CAR RENTAL APPLICATION\obj\Debug\netcoreapp3.1\Razor\Views\Users\Delete.cshtml.g.cs
+C:\Users\Luchian\Desktop\Git\CAR RENTAL APPLICATION\CAR RENTAL APPLICATION\obj\Debug\netcoreapp3.1\Razor\Views\Users\Details.cshtml.g.cs
+C:\Users\Luchian\Desktop\Git\CAR RENTAL APPLICATION\CAR RENTAL APPLICATION\obj\Debug\netcoreapp3.1\Razor\Views\Users\Edit.cshtml.g.cs
+C:\Users\Luchian\Desktop\Git\CAR RENTAL APPLICATION\CAR RENTAL APPLICATION\obj\Debug\netcoreapp3.1\Razor\Views\Users\Index.cshtml.g.cs
+C:\Users\Luchian\Desktop\Git\CAR RENTAL APPLICATION\CAR RENTAL APPLICATION\obj\Debug\netcoreapp3.1\Razor\Views\Cars\Presentation.cshtml.g.cs

@@ -29,6 +29,10 @@ namespace CAR_RENTAL_APPLICATION.Controllers
         {
             return View(await _context.Cars.ToListAsync());
         }
+        public async Task<IActionResult> Presentation()
+        {
+            return View(await _context.Cars.ToListAsync());
+        }
 
         // GET: Cars/Details/5
         public async Task<IActionResult> Details(int? id)
@@ -53,6 +57,8 @@ namespace CAR_RENTAL_APPLICATION.Controllers
         {
             return View();
         }
+
+
 
         // POST: Cars/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
@@ -81,7 +87,7 @@ namespace CAR_RENTAL_APPLICATION.Controllers
                     Brand = car.Brand,
                     Colour = car.Colour,
                     Capacity = car.Capacity,
-                    NumberOfDoors = car.Capacity,
+                    NumberOfDoors = car.NumberOfDoors,
                     FabricationYear = car.FabricationYear,
                     CarImagePath = uniqueFileName
 

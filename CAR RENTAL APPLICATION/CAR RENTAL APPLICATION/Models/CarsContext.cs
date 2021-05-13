@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using CAR_RENTAL_APPLICATION.Models;
 
 namespace CAR_RENTAL_APPLICATION.Models
 {
@@ -24,5 +25,7 @@ namespace CAR_RENTAL_APPLICATION.Models
         public DbSet<contact> contactlogs { get; set; }
 
         public DbSet<newsletter> newsletterlogs { get; set; }
+
+        public DbSet<CAR_RENTAL_APPLICATION.Models.User> User { get; set; }
     }
 }
