@@ -10,6 +10,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -28,9 +29,13 @@ namespace CAR_RENTAL_APPLICATION
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            var connection = @"Server=(localdb)\mssqllocaldb;Database=TestEntityFrameworkCAR_RENTAL_APPLICATION;Trusted_Connection=True;ConnectRetryCount=0";
+            var connection = @"Server=(localdb)\mssqllocaldb;Database=CARRENTALDB;Trusted_Connection=True;ConnectRetryCount=0";
+
             services.AddDbContext<CarsContext>
                 (options => options.UseSqlServer(connection));
+
+           
+
 
             services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
             services.AddScoped<CarRecordService>();
@@ -46,6 +51,7 @@ namespace CAR_RENTAL_APPLICATION
 
 
         }
+
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

@@ -9,17 +9,17 @@ namespace CAR_RENTAL_APPLICATION.Services
 {
     public class PaymentService : BaseService
     {
-        public PaymentService(IRepositoryWrapper repositoryWrapper)
-            : base(repositoryWrapper)
+        public PaymentService(IRepositoryWrapper RepositoryWrapper) : base(RepositoryWrapper)
         {
+
         }
 
-        public List<Payment> GetPayment()
+        public List<Payment> GetPayments()
         {
             return repositoryWrapper.PaymentRepository.FindAll().ToList();
         }
 
-        public List<Payment> GetPaymentByCondition(Expression<Func<Payment, bool>> expression)
+        public List<Payment> GetPaymentsByCondition(Expression<Func<Payment, bool>> expression)
         {
             return repositoryWrapper.PaymentRepository.FindByCondition(expression).ToList();
         }
@@ -38,5 +38,6 @@ namespace CAR_RENTAL_APPLICATION.Services
         {
             repositoryWrapper.PaymentRepository.Delete(Payment);
         }
+
     }
 }

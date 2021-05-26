@@ -551,7 +551,6 @@ C:\Users\Luchian\Desktop\Git\CAR RENTAL APPLICATION\CAR RENTAL APPLICATION\obj\D
 C:\Users\Luchian\Desktop\Git\CAR RENTAL APPLICATION\CAR RENTAL APPLICATION\obj\Debug\netcoreapp3.1\Razor\Views\Cars\Index.cshtml.g.cs
 C:\Users\Luchian\Desktop\Git\CAR RENTAL APPLICATION\CAR RENTAL APPLICATION\obj\Debug\netcoreapp3.1\Razor\Views\Shared\home.cshtml.g.cs
 C:\Users\Luchian\Desktop\Git\CAR RENTAL APPLICATION\CAR RENTAL APPLICATION\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LoginPartialBlack.cshtml.g.cs
-C:\Users\Luchian\Desktop\Git\CAR RENTAL APPLICATION\CAR RENTAL APPLICATION\obj\Debug\netcoreapp3.1\CAR RENTAL APPLICATION.csprojAssemblyReference.cache
 C:\Users\Luchian\Desktop\Git\CAR RENTAL APPLICATION\CAR RENTAL APPLICATION\obj\Debug\netcoreapp3.1\Razor\Views\Users\Create.cshtml.g.cs
 C:\Users\Luchian\Desktop\Git\CAR RENTAL APPLICATION\CAR RENTAL APPLICATION\obj\Debug\netcoreapp3.1\Razor\Views\Users\Delete.cshtml.g.cs
 C:\Users\Luchian\Desktop\Git\CAR RENTAL APPLICATION\CAR RENTAL APPLICATION\obj\Debug\netcoreapp3.1\Razor\Views\Users\Details.cshtml.g.cs

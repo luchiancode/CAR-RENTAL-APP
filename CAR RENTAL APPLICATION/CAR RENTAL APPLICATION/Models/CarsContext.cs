@@ -9,6 +9,10 @@ namespace CAR_RENTAL_APPLICATION.Models
 {
     public class CarsContext : DbContext
     {
+        public CarsContext()
+        {
+        }
+
         public CarsContext(DbContextOptions<CarsContext> options)
             : base(options)
         { }

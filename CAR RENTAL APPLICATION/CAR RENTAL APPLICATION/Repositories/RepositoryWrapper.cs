@@ -24,6 +24,13 @@ namespace CAR_RENTAL_APPLICATION.Repositories
 
         private ITransactionRepository _ITransactionRepository;
 
+
+        public RepositoryWrapper(CarsContext CarsContext)
+        {
+            _CarsContext = CarsContext;
+        }
+
+
         public InewsletterRepository newsletterRepository
         {
             get
@@ -138,11 +145,7 @@ namespace CAR_RENTAL_APPLICATION.Repositories
 
 
 
-        public RepositoryWrapper(CarsContext CarsContext)
-        {
-            _CarsContext = CarsContext;
-        }
-
+     
         public void Save()
         {
             _CarsContext.SaveChanges();

@@ -8,39 +8,39 @@ namespace CAR_RENTAL_APPLICATION.Repositories
 {
     public abstract class RepositoryBase<T> : IRepositoryBase<T> where T : class
     {
-        protected CarsContext mdbContext { get; set; }
+        protected CarsContext carsContext { get; set; }
 
-        public RepositoryBase(CarsContext mdbContext)
+        public RepositoryBase(CarsContext carsContext)
         {
-            this.mdbContext = mdbContext;
+            this.carsContext = carsContext;
         }
 
         public IQueryable<T> FindAll()
         {
-            return this.mdbContext.Set<T>().AsNoTracking();
+            return this.carsContext.Set<T>().AsNoTracking();
         }
 
         public IQueryable<T> FindByCondition(Expression<Func<T, bool>> expression)
         {
-            return this.mdbContext.Set<T>().Where(expression).AsNoTracking();
+            return this.carsContext.Set<T>().Where(expression).AsNoTracking();
         }
         public void Add(T entity)
         {
-            this.mdbContext.Set<T>().Add(entity);
+            this.carsContext.Set<T>().Add(entity);
         }
         public void Create(T entity)
         {
-            this.mdbContext.Set<T>().Add(entity);
+            this.carsContext.Set<T>().Add(entity);
         }
 
         public void Update(T entity)
         {
-            this.mdbContext.Set<T>().Update(entity);
+            this.carsContext.Set<T>().Update(entity);
         }
 
         public void Delete(T entity)
         {
-            this.mdbContext.Set<T>().Remove(entity);
+            this.carsContext.Set<T>().Remove(entity);
         }
 
     }

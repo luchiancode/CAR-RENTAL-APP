@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CAR RENTAL APPLICATION", "CAR RENTAL APPLICATION\CAR RENTAL APPLICATION.csproj", "{37C90D08-68A7-459C-8502-55DEA23BDEF8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CAR RENTAL APPLICATION", "CAR RENTAL APPLICATION\CAR RENTAL APPLICATION.csproj", "{37C90D08-68A7-459C-8502-55DEA23BDEF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaymentTest.ApplicationLogic.Test", "PaymentTest.ApplicationLogic.Test\PaymentTest.ApplicationLogic.Test.csproj", "{5E32DC74-49D5-4A8D-935F-085DBD5460DF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{37C90D08-68A7-459C-8502-55DEA23BDEF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{37C90D08-68A7-459C-8502-55DEA23BDEF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{37C90D08-68A7-459C-8502-55DEA23BDEF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E32DC74-49D5-4A8D-935F-085DBD5460DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E32DC74-49D5-4A8D-935F-085DBD5460DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E32DC74-49D5-4A8D-935F-085DBD5460DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E32DC74-49D5-4A8D-935F-085DBD5460DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
